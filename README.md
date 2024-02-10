@@ -46,14 +46,14 @@ In Kenya, the betting industry has grown significantly, especially in soccer bet
 
 Our goal is to create a straightforward tool where users can input for example a match ID, and the system, using machine learning, will provide a prediction. By leveraging advanced algorithms and historical data, we aim to offer reliable predictions, filling a gap in the Kenyan soccer betting scene. This project introduces cutting-edge data science techniques to make match predictions more accessible and practical for soccer enthusiasts in Kenya.
 
-## Data Source
+## **Data Source**
 Our dataset is a comprehensive collection sourced from the football API, FootyStats, and web scraping of relevant data from a dedicated website. The information encompasses football data for the English Premier League spanning from the 2016 to 2024 seasons. Through a meticulous cleaning process, the data was merged into a unified dataframe, ensuring accuracy and coherence for subsequent modeling and analysis.
 
-## Features
+## **Features**
 Utilizing the Recursive Feature Elimination (RFE) technique, we systematically identified and selected the most crucial features for our analysis. This method enhances the model's performance by focusing on the key variables that contribute significantly to the predictive outcomes.Our target variables included total goal count, fouls, and match outcomes.
-c
 
-## Methodology
+
+## **Methodology**
 The methodology employed in this project encompasses Exploratory Data Analysis (EDA), Data Preprocessing, and Modelling phases to develop a soccer match outcome prediction system for the English Premier League. Here's a brief description of each phase:
 
 ### EDA
@@ -80,7 +80,7 @@ To tackle the non-normal distribution of most features, scaling techniques, incl
 #### Handling Outliers
 The presence of outliers was addressed by applying log transformation, considering the absence of a strong linear relationship between features and the target variable.
 
-### Modelling
+### **Modelling**
 
 In the modeling phase, various machine learning algorithms were employed to predict key outcomes in soccer matches. The project focused on three main predictions: total goal count, fouls, and match outcomes. Regression models, such as Support Vector Regressor (SVR) and XGBoost Regressor, were utilized for total goal count predictions. For fouls, the Support Vector Machine (SVM) and Artificial Neural Network (ANN) demonstrated promising results. Additionally, classification models, including Decision Tree Classifier and Random Forest Classifier, were explored for match outcome predictions.
 
@@ -102,9 +102,7 @@ The Support Vector Machine (SVM) achieved a Root Mean Squared Error (RMSE) of 1.
 #### Match Outcomes
 The base models using Stochastic Gradient Descent (SGD) and Long Short-Term Memory (LSTM) demonstrated significant promise, achieving a commendable accuracy of 60% for goal predictions. We implemented a two-fold strategy:
 
-1. Hyperparameter Tuning:
-
-Decision Tree Classifier (DTC), Random Forest Classifier (RFC), SGD Classifier, and xGBoost Classifier underwent rigorous tuning using Grid Search. This systematic exploration of hyperparameter combinations aimed to unlock improved performance and fine-tune each model for optimal results.
+1. Hyperparameter Tuning:Decision Tree Classifier (DTC), Random Forest Classifier (RFC), SGD Classifier, and xGBoost Classifier underwent rigorous tuning using Grid Search. This systematic exploration of hyperparameter combinations aimed to unlock improved performance and fine-tune each model for optimal results.
 LSTM Models Optimization:
 
 2. Various LSTM model architectures were explored, incorporating adjustments to dropout rates and learning rates. The goal was to identify the most effective configuration for the LSTM models, optimizing their performance for accurate goal predictions.
@@ -112,7 +110,7 @@ LSTM Models Optimization:
 
 ![Alt Text](/images/matchoutcome_best_model.jpg)
 
-## Getting Started
+## **Getting Started**
 
 ### Installation
 
@@ -134,7 +132,7 @@ cd repository
 ```bash
 pip install -r requirements.txt
 ```
-### Prerequisites
+### **Prerequisites**
 
 Before using this project, make sure you have the following dependencies installed:
 
@@ -149,7 +147,7 @@ TensorFlow
 XGBoost
 
 ```
-### Contributing
+### **Contributing**
 We welcome contributions to improve the project. If you'd like to contribute, please follow these guidelines:
 
 **1. Bug Reports:** If you encounter a bug, open an issue describing the problem and steps to reproduce it.
@@ -160,15 +158,14 @@ We welcome contributions to improve the project. If you'd like to contribute, pl
 
 **4.Code Style:** Follow the project's coding style and conventions.
 
-### License
+### **License**
 This project is licensed under the MIT license - see the LICENSE.md file for details.
 
-### Acknowledgements
+### **Acknowledgements**
 We acknowledge and thank the following libraries, tools, or resources that contributed to the development of this project:
 
 ```
 Python (Version 3.0 or higher):The core programming language used for the project, providing a robust foundation for development.
-
 ```
 ```
 Scikit-learn:A powerful machine learning library that facilitated the implementation of various models and algorithms.
@@ -196,7 +193,9 @@ XGBoost: An efficient and scalable gradient boosting library that contributed to
 For questions, feedback, or additional information, feel free to reach out:
 
 [Rose Kyalo]
+
 Email: [rosekyalo94@gmail.com]
+
 Twitter: [@rose_kawila]
 
 
