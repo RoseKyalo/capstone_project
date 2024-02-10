@@ -1,4 +1,6 @@
 # NABII DIMBA FOOTBALL PREDICTIONS PROJECT.
+![Alt Text](/images/Nabii-Dimba)
+
 ## AUTHORS
 1.Wayne Korir
 
