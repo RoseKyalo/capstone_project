@@ -57,12 +57,11 @@ c
 The methodology employed in this project encompasses Exploratory Data Analysis (EDA), Data Preprocessing, and Modelling phases to develop a soccer match outcome prediction system for the English Premier League. Here's a brief description of each phase:
 
 ### EDA
-![Alt Text](/images/eda_into_one.png)
-
 In 46% of the matches, the home team emerged victorious, while the away team secured victory in 30%, and approximately 24% resulted in draws. Notably, during the 2020/2021 and 2021/2022 seasons, there was a noticeable decline in the home team's winning rate, coinciding with the global pandemic.
 
 This decrease in home team success coincided with the absence of fans from matches, emphasizing the potential influence of fan presence on match outcomes. The observed correlation suggests that the dynamic interaction between fans and players may play a significant role in determining the success of the home team. The absence of this factor during the pandemic period might have contributed to the shift in match outcomes.
 
+![Alt Text](/images/eda_into_one.png)
 
 ### Data Preprocessing
 
