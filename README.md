@@ -1,4 +1,4 @@
-# NABII DIMBA FOOTBALL PREDICTIONS PROJECT.
+# NABII DIMBA FOOTBALL PREDICTION PROJECT.
 ![Alt Text](/images/Nabii-Dimba.jpg)
 
 ## AUTHORS
@@ -37,7 +37,7 @@ Our dataset is a comprehensive collection sourced from the football API, FootySt
 
 ## Features
 Utilizing the Recursive Feature Elimination (RFE) technique, we systematically identified and selected the most crucial features for our analysis. This method enhances the model's performance by focusing on the key variables that contribute significantly to the predictive outcomes.Our target variables included total goal count, fouls, and match outcomes.
-![Alt Text](/capstone_project/images/totalgoalcount/RFE)
+![Alt Text](/images/totalgoalcount/RFE)
 
 ## Methodology
 
@@ -66,7 +66,7 @@ The presence of outliers was addressed by applying log transformation, consideri
 
 For predicting total goal count, we utilized regression models. Various models were considered, and after rigorous evaluation, the Support Vector Regressor (SVR) emerged as the most effective, achieving a Mean Absolute Error (MAE) of 0.3864. To enhance the performance of the SVR model, hyperparameter tuning was conducted, ensuring optimal parameter settings for improved predictive accuracy.
 
-![Alt Text](/capstone_project/images/totalgoalcount/models)
+![Alt Text](/images/totalgoalcount/models)
 
 #### Fouls
 
