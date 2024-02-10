@@ -1,4 +1,4 @@
-# NABII - DIMBA FOOTBALL PREDICTION PROJECT.
+**# NABII - DIMBA FOOTBALL PREDICTION PROJECT.**
 ![Alt Text](/images/Nabii-Dimba.jpg)
 
 ## AUTHORS
@@ -40,7 +40,7 @@
 10. [Contact](#contact)
 
 
-## Introduction
+**## Introduction**
 
 In Kenya, the betting industry has grown significantly, especially in soccer betting. Many Kenyan sports fans actively engage in predicting match outcomes, seeking to turn their passion into profitable decisions. This project responds to the need for better-informed betting by developing a user-friendly system for predicting English Premier League match outcomes.
 
