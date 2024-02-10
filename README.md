@@ -1,5 +1,5 @@
-# NABII DIMBA FOOTBALL PREDICTIONS PROJECT.
-![Alt Text](/images/Nabii-Dimba)
+# NABII - DIMBA FOOTBALL PREDICTION PROJECT.
+![Alt Text](/images/Nabii-Dimba.png)
 
 ## AUTHORS
 1.Wayne Korir
@@ -17,14 +17,28 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
-7. [Acknowledgements](#acknowledgements)
+2. [Data Source](#data-source)
+3. [Features](#features)
+4. [Methodology](#methodology)
+   - [EDA](#eda)
+   - [Data Preprocessing](#data-preprocessing)
+     - [Handling Null Values](#handling-null-values)
+     - [Feature Engineering](#feature-engineering)
+     - [Dealing with Multicollinearity](#dealing-with-multicollinearity)
+     - [Normalizing Feature Distributions](#normalizing-feature-distributions)
+     - [Handling Outliers](#handling-outliers)
+   - [Modelling](#modelling)
+     - [Total Goal Count Predictions](#total-goal-count-predictions)
+     - [Fouls](#fouls)
+     - [Match Outcomes](#match-outcomes)
+5. [Getting Started](#getting-started)
+   - [Installation](#installation)
+6. [Usage](#usage)
+7. [Contributing](#contributing)
+8. [License](#license)
+9. [Acknowledgements](#acknowledgements)
+10. [Contact](#contact)
+
 
 ## Introduction
 
@@ -37,11 +51,17 @@ Our dataset is a comprehensive collection sourced from the football API, FootySt
 
 ## Features
 Utilizing the Recursive Feature Elimination (RFE) technique, we systematically identified and selected the most crucial features for our analysis. This method enhances the model's performance by focusing on the key variables that contribute significantly to the predictive outcomes.Our target variables included total goal count, fouls, and match outcomes.
-![Alt Text](/capstone_project/images/totalgoalcount/RFE)
+c
 
 ## Methodology
+The methodology employed in this project encompasses Exploratory Data Analysis (EDA), Data Preprocessing, and Modelling phases to develop a soccer match outcome prediction system for the English Premier League. Here's a brief description of each phase:
 
 ### EDA
+![Alt Text](/images/eda_into_one.png)
+
+In 46% of the matches, the home team emerged victorious, while the away team secured victory in 30%, and approximately 24% resulted in draws. Notably, during the 2020/2021 and 2021/2022 seasons, there was a noticeable decline in the home team's winning rate, coinciding with the global pandemic.
+
+This decrease in home team success coincided with the absence of fans from matches, emphasizing the potential influence of fan presence on match outcomes. The observed correlation suggests that the dynamic interaction between fans and players may play a significant role in determining the success of the home team. The absence of this factor during the pandemic period might have contributed to the shift in match outcomes.
 
 
 ### Data Preprocessing
@@ -62,61 +82,122 @@ To tackle the non-normal distribution of most features, scaling techniques, incl
 The presence of outliers was addressed by applying log transformation, considering the absence of a strong linear relationship between features and the target variable.
 
 ### Modelling
+
+In the modeling phase, various machine learning algorithms were employed to predict key outcomes in soccer matches. The project focused on three main predictions: total goal count, fouls, and match outcomes. Regression models, such as Support Vector Regressor (SVR) and XGBoost Regressor, were utilized for total goal count predictions. For fouls, the Support Vector Machine (SVM) and Artificial Neural Network (ANN) demonstrated promising results. Additionally, classification models, including Decision Tree Classifier and Random Forest Classifier, were explored for match outcome predictions.
+
+Model selection was based on rigorous evaluation metrics, such as Mean Absolute Error (MAE),Root Mean Squared Error (RMSE), Accuracy and F1 Score to ensure optimal performance. The chosen models underwent further optimization through hyperparameter tuning and fine-tuning of model architectures. The iterative process aimed to enhance predictive accuracy and produce reliable insights for soccer enthusiasts engaging in match outcome predictions.
+
+Visualizations of model performances, such as learning curves and hyperparameter tuning results, were instrumental in assessing and improving the models. The overall goal was to deploy models that could provide valuable insights, assist in making informed betting decisions, and contribute to the user-friendly soccer match outcome prediction system.
+
 #### Total Goal Count Predictions
 
 For predicting total goal count, we utilized regression models. Various models were considered, and after rigorous evaluation, the Support Vector Regressor (SVR) emerged as the most effective, achieving a Mean Absolute Error (MAE) of 0.3864. To enhance the performance of the SVR model, hyperparameter tuning was conducted, ensuring optimal parameter settings for improved predictive accuracy.
 
-![Alt Text](/capstone_project/images/totalgoalcount/models)
+![Alt Text](/images/totalgoalcount_best_model.png)
 
 #### Fouls
+The Support Vector Machine (SVM) achieved a Root Mean Squared Error (RMSE) of 1.97, while the Artificial Neural Network (ANN) exhibited an RMSE of 1.95. These promising results suggest the potential effectiveness of both models, but additional tuning could enhance their predictive accuracy even further.
+
+![Alt Text](/images/fouls_best_model.png)
 
 #### Match Outcomes
+The base models using Stochastic Gradient Descent (SGD) and Long Short-Term Memory (LSTM) demonstrated significant promise, achieving a commendable accuracy of 60% for goal predictions. We implemented a two-fold strategy:
+
+1. Hyperparameter Tuning:
+
+Decision Tree Classifier (DTC), Random Forest Classifier (RFC), SGD Classifier, and xGBoost Classifier underwent rigorous tuning using Grid Search. This systematic exploration of hyperparameter combinations aimed to unlock improved performance and fine-tune each model for optimal results.
+LSTM Models Optimization:
+
+2. Various LSTM model architectures were explored, incorporating adjustments to dropout rates and learning rates. The goal was to identify the most effective configuration for the LSTM models, optimizing their performance for accurate goal predictions.
+
+
+![Alt Text](/images/matchoutcome_best_model.png)
 
 ## Getting Started
 
+### Installation
+
 Follow these steps to set up and run the project locally:
 
-### 1. Clone the Repository
+#### 1. Clone the Repository
 
 To get a copy of this project on your local machine, clone the repository using the following command:
 
 ```bash
 git clone https://github.com/username/repository.git
-
-### 2. Navigate to the Project Directory
-
+```
+#### 2. Navigate to the Project Directory
+```bash
 cd repository
-3. Install Dependencies
-pip install -r requirements.txt
+```
 
+#### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 ### Prerequisites
 
-List any dependencies or prerequisites that users need to install before using your project.
+Before using this project, make sure you have the following dependencies installed:
 
-### Installation
+```
+Python (Version 3.0 or higher)
+Scikit-learn
+Numpy
+Pandas
+Matplotlib
+Seaborn
+TensorFlow
+XGBoost
 
-Step-by-step guide on how to install and configure your project.
+```
+### Contributing
+We welcome contributions to improve the project. If you'd like to contribute, please follow these guidelines:
 
-## Usage
+**1. Bug Reports:** If you encounter a bug, open an issue describing the problem and steps to reproduce it.
 
-Demonstrate how users can use your project. Include code snippets, examples, or screenshots.
+**2. Feature Requests:** Suggest new features or enhancements by opening an issue with a detailed description.
 
-## Contributing
+**3.Code Contributions:** Fork the repository, create a new branch, make your changes, and submit a pull request.
 
-Guidelines for contributing to your project, including information on how others can submit bug reports, feature requests, or contribute code.
+**4.Code Style:** Follow the project's coding style and conventions.
 
-## License
+### License
+This project is licensed under the MIT license - see the LICENSE.md file for details.
 
-State the license under which your project is distributed.
+### Acknowledgements
+We acknowledge and thank the following libraries, tools, or resources that contributed to the development of this project:
 
-## Acknowledgements
+```
+Python (Version 3.0 or higher):The core programming language used for the project, providing a robust foundation for development.
 
-Acknowledge and give credit to any third-party libraries, tools, or resources you used in your project.
+```
+```
+Scikit-learn:A powerful machine learning library that facilitated the implementation of various models and algorithms.
+```
+```
+Numpy:Essential for numerical computing and array operations, Numpy played a crucial role in data manipulation and analysis.
+```
+```
+Pandas:A versatile data manipulation library that simplified handling and processing of structured data.
+```
+```
+Matplotlib:A comprehensive plotting library that enabled the creation of visualizations for data exploration and analysis.
+```
+```
+Seaborn:Built on top of Matplotlib, Seaborn enhanced the aesthetics of visualizations, making them more informative and appealing.
+```
+```
+TensorFlow:An open-source machine learning framework that supported the implementation of deep learning models and neural networks.
+```
+```
+XGBoost: An efficient and scalable gradient boosting library that contributed to the development of robust predictive models.
+```
 
-## Contact
+### Contact
+For questions, feedback, or additional information, feel free to reach out:
 
-Provide contact information for users to reach out with questions or feedback.
+[Your Name]
+Email: [your.email@example.com]
+Twitter: [@your_twitter_handle]
 
----
 
-**Note:** Include badges or additional sections as needed for your specific project, such as a build status badge, demo link, or a roadmap for future development.
