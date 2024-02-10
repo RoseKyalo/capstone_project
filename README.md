@@ -164,30 +164,14 @@ This project is licensed under the MIT license - see the LICENSE.md file for det
 ### **Acknowledgements**
 We acknowledge and thank the following libraries, tools, or resources that contributed to the development of this project:
 
-```
-Python (Version 3.0 or higher):The core programming language used for the project, providing a robust foundation for development.
-```
-```
-Scikit-learn:A powerful machine learning library that facilitated the implementation of various models and algorithms.
-```
-```
-Numpy:Essential for numerical computing and array operations, Numpy played a crucial role in data manipulation and analysis.
-```
-```
-Pandas:A versatile data manipulation library that simplified handling and processing of structured data.
-```
-```
-Matplotlib:A comprehensive plotting library that enabled the creation of visualizations for data exploration and analysis.
-```
-```
-Seaborn:Built on top of Matplotlib, Seaborn enhanced the aesthetics of visualizations, making them more informative and appealing.
-```
-```
-TensorFlow:An open-source machine learning framework that supported the implementation of deep learning models and neural networks.
-```
-```
-XGBoost: An efficient and scalable gradient boosting library that contributed to the development of robust predictive models.
-```
+**1. Python (Version 3.0 or higher):** The core programming language used for the project, providing a robust foundation for development.
+**2. Scikit-learn:** A powerful machine learning library that facilitated the implementation of various models and algorithms.
+**3. Numpy:** Essential for numerical computing and array operations, Numpy played a crucial role in data manipulation and analysis.
+**4. Pandas:** A versatile data manipulation library that simplified handling and processing of structured data.
+**5. Matplotlib:** A comprehensive plotting library that enabled the creation of visualizations for data exploration and analysis.
+**6. Seaborn:** Built on top of Matplotlib, Seaborn enhanced the aesthetics of visualizations, making them more informative and appealing.
+**7. TensorFlow:** An open-source machine learning framework that supported the implementation of deep learning models and neural networks.
+**8. XGBoost:** An efficient and scalable gradient boosting library that contributed to the development of robust predictive models.
 
 ### Contact
 For questions, feedback, or additional information, feel free to reach out:
