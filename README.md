@@ -1,7 +1,7 @@
 # **NABII - DIMBA FOOTBALL PREDICTION PROJECT.**
 ![Alt Text](/images/Nabii-Dimba.jpg)
 
-## AUTHORS
+## **AUTHORS**
 1.Wayne Korir
 
 2.Rose Kyalo
@@ -15,7 +15,7 @@
 6.Ivy Ndunge
 
 
-## Table of Contents
+## **Table of Contents**
 1. [Introduction](#introduction)
 2. [Data Source](#data-source)
 3. [Features](#features)
@@ -40,7 +40,7 @@
 10. [Contact](#contact)
 
 
-**## Introduction**
+## **Introduction**
 
 In Kenya, the betting industry has grown significantly, especially in soccer betting. Many Kenyan sports fans actively engage in predicting match outcomes, seeking to turn their passion into profitable decisions. This project responds to the need for better-informed betting by developing a user-friendly system for predicting English Premier League match outcomes.
 
