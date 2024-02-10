@@ -1,5 +1,5 @@
 # NABII - DIMBA FOOTBALL PREDICTION PROJECT.
-![Alt Text](/images/Nabii-Dimba.png)
+![Alt Text](/images/Nabii-Dimba.jpg)
 
 ## AUTHORS
 1.Wayne Korir
@@ -93,12 +93,12 @@ Visualizations of model performances, such as learning curves and hyperparameter
 
 For predicting total goal count, we utilized regression models. Various models were considered, and after rigorous evaluation, the Support Vector Regressor (SVR) emerged as the most effective, achieving a Mean Absolute Error (MAE) of 0.3864. To enhance the performance of the SVR model, hyperparameter tuning was conducted, ensuring optimal parameter settings for improved predictive accuracy.
 
-![Alt Text](/images/totalgoalcount_best_model.png)
+![Alt Text](/images/totalgoalcount_best_model.jpg)
 
 #### Fouls
 The Support Vector Machine (SVM) achieved a Root Mean Squared Error (RMSE) of 1.97, while the Artificial Neural Network (ANN) exhibited an RMSE of 1.95. These promising results suggest the potential effectiveness of both models, but additional tuning could enhance their predictive accuracy even further.
 
-![Alt Text](/images/fouls_best_model.png)
+![Alt Text](/images/fouls_best_model.jpg)
 
 #### Match Outcomes
 The base models using Stochastic Gradient Descent (SGD) and Long Short-Term Memory (LSTM) demonstrated significant promise, achieving a commendable accuracy of 60% for goal predictions. We implemented a two-fold strategy:
@@ -111,7 +111,7 @@ LSTM Models Optimization:
 2. Various LSTM model architectures were explored, incorporating adjustments to dropout rates and learning rates. The goal was to identify the most effective configuration for the LSTM models, optimizing their performance for accurate goal predictions.
 
 
-![Alt Text](/images/matchoutcome_best_model.png)
+![Alt Text](/images/matchoutcome_best_model.jpg)
 
 ## Getting Started
 
@@ -196,8 +196,8 @@ XGBoost: An efficient and scalable gradient boosting library that contributed to
 ### Contact
 For questions, feedback, or additional information, feel free to reach out:
 
-[Your Name]
-Email: [your.email@example.com]
-Twitter: [@your_twitter_handle]
+[Rose Kyalo]
+Email: [rosekyalo94@gmail.com]
+Twitter: [@rose_kawila]
 
 
